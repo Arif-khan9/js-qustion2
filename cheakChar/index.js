@@ -1,4 +1,4 @@
-
+// Check if a character is uppercase or lowercase.
 
 function cheackChar(char){
 
