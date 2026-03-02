@@ -2,12 +2,28 @@
 
 const arr = [1,2,2,3,3,3]
 
-const freq = arr.reduce((acc,n)=>{
-    acc[n] = (acc[n] || 0) +1;
-    return acc
-},{})
+// const freq = arr.reduce((acc,n)=>{
+//     acc[n] = (acc[n] || 0) +1;
+//     return acc
+// },{})
 
-console.log(freq)
+// console.log(freq)
+
+function freq(arr){
+
+    let obj = {}
+
+    for(let i=0; i<arr.length;i++){
+     
+        obj[arr[i]] =1
+        
+        // console.log(arr[i])
+    }
+    return obj
+
+}
+console.log(freq([1,2,2,3,3,3]))
+
 
 
 
