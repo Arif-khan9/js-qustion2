@@ -2,12 +2,11 @@
 // Question: Implement a program that takes a number as input and prints its reverse.
 // Example Input:
 
-function reverseNUmber(num){
-    let rev = 0;
-    while(num>0){
-        let rem = num%10;
-        rev=rev*10 + rem;
-        num = Math.floor(num/10);
-    }
-    return rev;
+function reverseNUmber(arr){
+    let arr2 = []
+   for(let i=arr.length -1; i>=0; i--){
+    arr2.push(arr[i])
+   }
+   return arr2
 }
+console.log(reverseNUmber([1,2,3,4]))
