@@ -1,8 +1,10 @@
 // find Missing Number
 
-const arr = [1, 2, 4, 5]
-const n = 5
-let total = n*(n+1)/2
-let sum = arr.reduce((a,b)=> a+b,0)
+function findMissingNumber(arr, n){
+    let total = n * (n + 1) / 2
+    let sum = arr.reduce((a,b) => a + b, 0)
 
-console.log(total - sum)
+    return total - sum
+}
+
+console.log(findMissingNumber([1,2,4,5], 5))
