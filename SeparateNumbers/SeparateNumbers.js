@@ -1,4 +1,4 @@
-// "Separate Numbers and Strings from an Array"
+// "SeparateNumbers and Strings from an Array"
 
 function f1(arr) {
   let num = [];
