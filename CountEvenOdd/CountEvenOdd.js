@@ -1,4 +1,4 @@
-// Count Even and Odd Numbers in an Array
+// Count Even and Odd Numbers in an function
 
 function countEvenOdd(arr){
   let even = 0;
