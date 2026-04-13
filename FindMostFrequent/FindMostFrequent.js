@@ -1,4 +1,4 @@
-
+// 👉 Find Most Frequent Character in a String
 
 function maxChar(str){
   let obj = {};
