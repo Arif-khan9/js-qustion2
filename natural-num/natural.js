@@ -1,11 +1,12 @@
 // 3.	Sum of Natural Numbers:
 // Question: Write a program to calculate the sum of all natural numbers up to a given number ￼.
 // Example Input:
-
-let num = parseInt(prompt("Enter the number"));
-let sum = 0;
-for(let i=1;i<=num;i++){
-    sum=sum+i;
-
+function natural(num){
+  let store = 0
+  for(let i=1;i<=num;i++){
+    store = store+i
+  }
+  return store
 }
-console.log(sum);
+
+console.log(natural(10))
