@@ -1,15 +1,20 @@
 // Find Second Largest Number
 
 function secondLargest(arr) {
-  arr.sort((a, b) => b - a);
+  let largestNum = 0
+  let secLargestNum = 0
+  for(let i=0; i<arr.length;i++){
 
-  let first = arr[0];
-
-  for (let i = 1; i < arr.length; i++) {
-    if (arr[i] !== first) {
-      return arr[i];
+    if(arr[i]  > largestNum){
+     
+      
+      secLargestNum = largestNum
+      largestNum = arr[i]
     }
+
+
   }
+  return secLargestNum
 }
 
 console.log(secondLargest([1,6,8,3,9]))
