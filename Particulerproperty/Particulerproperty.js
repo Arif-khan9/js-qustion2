@@ -9,7 +9,6 @@ let person = {
    console.log(store);
    
 
-// console.log(person.hasOwnProperty("age")) // true
-// console.log(person.hasOwnProperty("city")) // false
+
 
 
