@@ -3,7 +3,7 @@
 const obj1 = {
     name: "arif",
     age: 22,
-    // city: "mumbai"
+    
 };
 
 const obj2 = {
