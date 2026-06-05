@@ -1,6 +1,5 @@
 // ⁠ ⁠JavaScript Program to Count the Number of Keys/Properties in an Object.
 
-
 const  obj={
     name:"arif",
     age:24,
@@ -9,4 +8,4 @@ const  obj={
 
 let count = Object.keys(obj);
 
-console.log(count.length);
+console.log(count);
