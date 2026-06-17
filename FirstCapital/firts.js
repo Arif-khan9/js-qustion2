@@ -1,8 +1,12 @@
 // Capitalize First Letter of Each Word
+function firstLetterCapital(str) {
+  let store = str.split(" ");
 
+  for (let i = 0; i < store.length; i++) {
+    store[i] = store[i][0].toUpperCase() + store[i].slice(1);
+  }
 
-function capitalizeWords(str) {
-  return str.split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+  return store.join(" ");
 }
 
-console.log(capitalizeWords("my name is arif"));
+console.log(firstLetterCapital("my name is arif"));
