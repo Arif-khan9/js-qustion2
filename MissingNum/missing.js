@@ -1,10 +1,12 @@
 // find Missing Number
-
-function findMissingNumber(arr, n){
-    let total = n * (n + 1) / 2
-    let sum = arr.reduce((a,b) => a + b, 0)
-
-    return total - sum
+function misingNum(num){
+  let res = []
+  for(let i=1;i<num.at(-1);i++){
+  
+    if(!num.includes(i)){
+      res.push(i)
+    }
+  }
+  return res
 }
-
-console.log(findMissingNumber([1,2,4,5], 5))
+console.log(misingNum([1,3,4,5,6,8,10,19]))
