@@ -1,12 +1,20 @@
 // find Missing Number
-function misingNum(num){
-  let res = []
-  for(let i=1;i<num.at(-1);i++){
-  
-    if(!num.includes(i)){
-      res.push(i)
-    }
+let arr = [1,3,5,7,9]
+
+
+function misingNum(arr){
+  let store2 = []
+  let store = 0
+ for(let i=0;i<arr.length;i++){
+  if(store<arr[i]){
+    store = arr[i]
   }
-  return res
+ }
+ for(let j=1;j<store;j++){
+  if(!store2.includes(j)){
+    store2.push(j)
+  }
+ }
+ return store2
 }
-console.log(misingNum([1,3,4,5,6,8,10,19]))
+console.log(misingNum(arr))
